@@ -1,16 +1,16 @@
 # ⚙️ YEAR 1 — HARDWARE ENGINEERING (hardware-mastery-year01)
 
-## 🛠️ Months 1–2 — Nand2Tetris Finish Line
-**Mission:** Finish the final stretch of Nand2Tetris and establish absolute fluency in the software layers sitting directly above computer hardware.
+## 🛠️ Months 1–2 — Nand2Tetris Foundation
+**Mission:** Build a complete 16-bit computer from scratch using basic logic gates to master the hardware-software interface.
 
-### Month 1 — Virtual Machine
-*   **Primary work:** Complete VM translator, stack-based execution, function calls, stack frames, memory segments, program flow.
-*   **GitHub Output:** Fully written VM translator, clean structure, architecture notes.
+### Month 1 — Boolean Logic to Hack Architecture
+*   **Primary work:** Implement fundamental logic gates (AND, OR, XOR), build an ALU, construct RAM/Registers, and wire the CPU.
+*   **GitHub Output:** Complete Hardware Description Language (HDL) files and CPU design blueprints.
 
-### Month 2 — Compiler + OS
-*   **Primary work:** Jack compiler, tokenization, parsing, symbol tables, code generation, OS abstraction.
-*   **Final Artifact:** Complete Jack → VM → Assembly → Hack Machine pipeline.
-*   **Gate:** Explain exactly what happens from a high-level program down to CPU execution.
+### Month 2 — Machine Language to VM Basics
+*   **Primary work:** Write low-level programs in Hack assembly, build an assembler, and implement the initial stages of a virtual machine stack.
+*   **Final Artifact:** A fully functioning simulated 16-bit computer running custom machine code.
+*   **Gate:** Explain exactly how a logic gate combination manipulates voltages to store binary data in memory.
 
 ---
 
