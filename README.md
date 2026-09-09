@@ -1,71 +1,62 @@
-# ⚙️ YEAR 1 — HARDWARE ENGINEERING (hardware-mastery-year01)
+# ⚙️ EDITED YEAR 1 — HARDWARE ENGINEERING (hardware-mastery-year01)
 
-## 🛠️ Months 1–2 — Nand2Tetris Foundation
-**Mission:** Build a complete 16-bit computer from scratch using basic logic gates to master the hardware-software interface.
+[M1-M4] Nand2Tetris Stack ──> [M5-M6] Physical Circuitry ──> [M7-M8] Robotics & CAD ──> [M9-M10] FRC Industrial & PCBs ──> [M11-M12] Diagnostics & IT
+(Logic Gates up to OS) (Arduino & I/O Sensors) (Motors & Fusion 360) (High Power & KiCad) (Refurbishing & Soldering)
 
-### Month 1 — Boolean Logic to Hack Architecture
-*   **Primary work:** Implement fundamental logic gates (AND, OR, XOR), build an ALU, construct RAM/Registers, and wire the CPU.
-*   **GitHub Output:** Complete Hardware Description Language (HDL) files and CPU design blueprints.
 
-### Month 2 — Machine Language to VM Basics
-*   **Primary work:** Write low-level programs in Hack assembly, build an assembler, and implement the initial stages of a virtual machine stack.
-*   **Final Artifact:** A fully functioning simulated 16-bit computer running custom machine code.
-*   **Gate:** Explain exactly how a logic gate combination manipulates voltages to store binary data in memory.
+## 🛠️ Months 1–4 — The Nand2Tetris Mastery Phase
+**Mission:** Build a complete 16-bit computer from raw NAND gates all the way up to an operational, high-level computer system to master the hardware-software interface.
 
----
+### Months 1–2 — Hardware Foundations (Part I)
+*   **Primary work:** Build fundamental gates (AND, OR, XOR), design an ALU, construct RAM/Registers, wire the custom Hack CPU, and write a low-level machine language assembler.
+*   **GitHub Output:** Validated Hardware Description Language (`.hdl`) files and functional assembly code.
 
-## 🔋 Months 3–4 — Physical Circuitry & I/O
-**Mission:** Cross the boundary from software to the physical world.
-
-### Month 3 — Electronics Fundamentals
-*   **Learn:** Voltage, current, resistance, Ohm’s Law, digital vs analog, GPIO, breadboards.
-*   **Build Progression:** LED → Button-controlled LED → Potentiometer analog reading → Sensor system.
-
-### Month 4 — Sensors + Communication
-*   **Learn:** Ultrasonic/Light/Temp sensors, PWM, UART, I²C, SPI.
-*   **Major Project:** Build a small sensor-monitoring system logging firmware and protocols.
+### Months 3–4 — Software Abstractions (Part II)
+*   **Primary work:** Write a Virtual Machine stack translator, build a full compiler (tokenization/parsing) for the Jack language, and code core OS libraries.
+*   **Final Pipeline Artifact:** A complete Jack → VM → Assembly → Hack Machine compilation chain.
+*   **Gate:** Explain and visually trace a high-level line of code down to physical ALU state manipulation.
 
 ---
 
-## 🤖 Months 5–7 — Robotics + Actuators + CAD
-**Mission:** Make computation physically move things.
+## 🔋 Months 5–6 — Physical Circuitry & I/O
+**Mission:** Cross the boundary from software simulations to real-world physical electricity.
 
-### Month 5 — Motors
-*   **Learn:** Servo motors (PWM/position), DC motors (H-bridges/speed), Stepper motors. Understand why microcontrollers can't drive motors directly.
+### Month 5 — Electronics Fundamentals
+*   **Learn:** Voltage, current, resistance, Ohm’s Law, digital vs. analog signals, and GPIO architectures using an **Arduino Starter Kit** and a digital multimeter.
 
-### Month 6 — Mechanical Engineering + CAD
-*   **Learn:** Onshape design, sketching, constraints, extrusions, assemblies, tolerances.
-*   **Project:** Design a physical mechanism that solves a real problem (Export `.STEP` / `.STL`).
-
-### Month 7 — Raspberry Pi + Integrated Robot
-*   **Learn:** Linux, Raspberry Pi, Python, MCU ↔ Pi serial communication.
-*   **Major Build:** Integrated robotic system merging software, electrical, and mechanical fields.
+### Month 6 — Sensors & Communication
+*   **Learn:** Sensor monitoring (ultrasonic, temperature, light), PWM, and wire-level communication protocols (**UART, I²C, SPI**).
+*   **Gate:** Understand *why* a protocol signal functions at the electrical level, rather than just relying on pre-built software libraries.
 
 ---
 
-## ⚡ Months 8–10 — FRC Industrial Hardware + Custom PCB
-**Mission:** Transition to heavy-duty industrial systems and manufactured hardware.
+## 🤖 Months 7–8 — Robotics + Actuators + CAD
+**Mission:** Force computational logic to physically move physical objects.
 
-### Month 8 — Industrial Electrical Systems
-*   **Learn:** Power distribution hubs, roboRIO architectures, relays, fuses, 12V/24V safety, pneumatics.
+### Month 7 — Motors & Mechanical Engineering
+*   **Learn:** Precise locomotion using servo, stepper, and DC motors (via H-bridge drivers). Learn computer-aided design (**Onshape**) to build assemblies with calculated tolerances.
 
-### Month 9 — KiCad Custom PCBs
-*   **Learn:** Schematics, footprints, trace routing, ground planes, DRC, Gerber manufacturing.
-*   **Project:** Design, order, and assemble a simple custom circuit board.
+### Month 8 — Raspberry Pi Integration
+*   **Learn:** Linux-based Single Board Computers, Python GPIO automation, and cross-device MCU ↔ Pi serial communications.
 
-### Month 10 — WPILib + Custom Hardware
-*   **Learn:** FRC programming architecture, robot control loops, custom PCB integration.
+---
+
+## ⚡ Months 9–10 — FRC Industrial Hardware + Custom PCB
+**Mission:** Scale up to heavy-duty industrial environments and manufactured electronics.
+
+### Month 9 — Industrial Electrical Systems
+*   **Learn:** High-current FRC-style robotics architecture (relays, fuses, wiring standards, 12V power distribution hubs, and automated pneumatic air systems).
+
+### Month 10 — KiCad PCB Design & WPILib
+*   **Learn:** Schematics, footprints, trace routing, and Gerber manufacturing via **KiCad**. Integrate hardware directly into the industry-standard WPILib robotics software framework.
 
 ---
 
 ## 🔧 Months 11–12 — Troubleshooting + Deep IT
-**Mission:** Learn to systematically diagnose and repair complex technical failures.
+**Mission:** Develop the systematic diagnostics framework required to trace and repair complex field failures.
 
-### Month 11 — Hardware Diagnostics + Soldering
-*   **Learn:** Continuity/voltage diagnostics, soldering/desoldering, fault isolation with a multimeter.
-*   **Practice:** Take inexpensive broken electronics, locate faults, repair, and verify.
+### Month 11 — Hardware Diagnostics & Soldering
+*   **Learn:** Multimeter continuity tracing, board-level fault isolation, through-hole soldering, and desoldering component repair.
 
-### Month 12 — Networking + Deployment
-*   **Learn:** DHCP, DNS, SSH, PXE Network boot concepts, automated OS deployment script design.
-*   **Final Project:** Build a local environment capable of automated bare-metal server provisioning.
-
+### Month 12 — Networking & OS Deployment
+*   **Learn:** Linux systems networking (DHCP, DNS, SSH) and set up a custom local PXE network boot environment designed to automatically image computers.
